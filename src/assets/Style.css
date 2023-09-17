@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*---------- Header CSS -------------*/
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+
+.Header-container {
+    display: flex;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.logo-container span {
+    text-decoration: none;
+    color: #000000;
+
+}
+
+.nav-btn {
+    flex: 3;
+    display: flex;
+    font-size: 10px;
+}
+
+.nav-links {
+    flex: 2;
+    padding-left: 155px;
+    padding-top: 15px;
+}
+
+.log-sign {
+    display: flex;
+    align-items: center;
+}
+
+.log-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 2rem;
+    height: 30px;
+    margin-top: 33px;
+    padding-right: 10px;
+}
+
+.btn-search {
+    text-align: left;
+    height: 20px;
+    width: 160px;
+    outline: none;
+    border: none;
+    margin-left: 10px;
+    background: transparent;
+}
+
+.btn-search:focus {
+    outline: none;
+    border: none;
+}
+
+.logo {
+    color: #000000;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.logo span {
+    font-weight: 300;
+}
+
+.log-sign .btn {
+    display: inline-block;
+    padding: .5rem 1.3rem;
+    font-size: 11px;
+    border: 2px solid #000000;
+    border-radius: 2rem;
+    line-height: 1;
+    margin: 10px 20px;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;;
+}
+
+
+.nav-links>ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-link {
+    position: relative;
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+.nav-link>a {
+    line-height: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 .8rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*---------- Header CSS ends -------------*/
+
+/*---------- Main Container --------------------*/
+
+.Main-Container{
+    background-image: url("Images/cover.jpg");
+    height: 966px;
+    background-repeat: no-repeat;
+    background-size: 100% 1200px;
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
+    border-radius: 0 0 2.5rem 2.5rem;
+}
+.Main-Container-content{
+    z-index: 2;
+  background-color: rgba(88, 87, 87, 0.226);
+  color: white;
+  position: absolute;
+  height: 300px;
+  width: auto;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  padding: 30px;
+  text-align: center;
+  border-radius: 3rem;
+  backdrop-filter: blur(5px);
+}
+.Main-Container-content h2{
+    margin: 30px;
+    color: aliceblue;
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.Main-Container-content p{
+    margin: 30px;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Content-Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 30px;
+}
+.Content-Buttons button{
+    border: 1.5px solid black;
+    border-radius: 2rem;
+    padding: 5px 20px;
+    margin: 0px 12px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff00;
+    border: 1.5px solid black;
+}
+.Content-Buttons button:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000000;
+}
+
+
+/*---------- Main Container --------------------*/
+
+/*---------------Explore Container start--------------------*/
+
+.Main-Explore-Container{
+    height: 990px;
+    display: grid;
+}
+.Explore-Container{
+    margin: 20px;
+    height: 950px;
+}
+.First-Explore-Container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.Second-Explore-Container{
+    width: 100%;
+    height: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.First-Explore-Container .Explore-Tech{
+    background-image: url("Images/Camera-Explore1.jpg");
+    width: 60%;
+    height: 100%;
+    background-size: 57% 127%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-color: rgba(212, 212, 212, 0.24);
+    background-position: center left 530px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 250px 0px 0px 40px;
+}
+.First-Explore-Container .Explore-Gear{
+    background-image: url("Images/Headphone-Explore1.jpeg");
+    width: 35%;
+    height: 100%;
+    background-size: 110% 130%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-position: center left 340px;
+    background-color: rgba(212, 212, 212, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 250px 0px 0px 40px;
+}
+.Second-Explore-Container .Explore-Gear2{
+    background-image: url("Images/Gear-Explore2.png");
+    width: 35%;
+    height: 100%;
+    background-size: 110% 130%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-position: center left 340px;
+    background-color: rgba(212, 212, 212, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 250px 0px 0px 40px;
+}
+.Second-Explore-Container .Explore-Accessory{
+    background-image: url("Images/Explore-Speaker1.png");
+    width: 60%;
+    height: 100%;
+    background-size: 45% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-position: left;
+    background-position: center left 630px;
+    background-color: rgba(212, 212, 212, 0.24);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 250px 0px 0px 40px;
+}
+
+.Explore-Tech a,.Explore-Gear a, .Explore-Gear2 a, .Explore-Accessory a{
+    text-decoration: underline;
+    color: #000000;
+}
+
+
+/*---------------Explore Container End-----------------------*/
+
+/*---------- Main Store Container --------------*/
+
+.main-store-div{
+    margin: 30px;
+    width: auto;
+    height: auto;
+}
+.store-header{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.Store-Item-Categories{
+    display: flex;
+    margin-left: 28px;
+}
+.Store-Item-Categories input{
+    border: 1.5px solid black;
+    border-radius: 2rem;
+    padding: 5px 20px;
+    margin: 0px 2px;
+}
+
+.Store-Item-Categories input:hover{
+    background-color: black;
+    color: white;
+}
+
+.Store-Item-Categories .store-all-button{
+    background-color: #000000;
+    color: white;
+}
+
+/*--------Store Items-------------------*/
+.Store-Item{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.Store-Item-card-1 , .Store-Item-card-2,
+.Store-Item-card-3, .Store-Item-card-4,
+.Store-Item-card-5,.Store-Item-card-6 {
+    background-image: url("Images/AirBnBnow.png");
+    background-size: 530px 450px;
+    background-repeat: no-repeat;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    height: 600px;
+    width: 530px;
+    margin: 18px 50px;
+    border-radius: 2rem;
+}
+.Store-Item-card-2{
+    background-image: url("Images/Behance.png");
+}
+.Store-Item-card-3{
+    background-image: url("Images/headphone.jpg");
+}
+.Store-Item-card-4{
+    background-image: url("Images/hairdryer.jpeg");
+}
+.Store-Item-card-5{
+    background-image: url("Images/lens.jpg");
+}
+.Store-Item-card-6{
+    background-image: url("Images/light.jpeg");
+}
+.Store-Item-card-1 input,.Store-Item-card-2 input,
+.Store-Item-card-3 input,.Store-Item-card-4 input,
+.Store-Item-card-5 input,.Store-Item-card-6 input {
+    border: none;
+    margin: 20px;
+    height: 30px;
+    width: 110px;
+    text-align: center;
+    border-radius: 2rem;
+    font-weight: bold;
+    cursor: default;
+    outline: none;
+}
+.Store-Item .Item-Card-Desc{
+    width: 530px;
+    height: 180px;
+    text-align: center;
+    margin: 0;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-decoration: none;
+}
+.Store-Item div div input{
+    color: #000000;
+    text-decoration: none;
+    border:1.5px solid black;
+    width: 120px;
+    margin-left: 40%;
+}
+.Store-Item div div input:hover{
+    color: #ffffff;
+    text-decoration: none;
+    border:1.5px solid rgb(0, 0, 0);
+    background-color: black;
+}
+
+/*---------- Main Store Container Ends --------------*/
+
+/*----------- Main Footer Container Starts--------------*/
+
+
+
+.Main-Footer-Container{
+    background-size: 100% 400px;
+    height: 400px;
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 2rem 2rem 0 0;
+    margin-bottom: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    background-color: #000000;
+}
+.company-container-footer{
+    color: #ffffff;
+    font-size: x-large;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 3rem;
+    padding: 30px 0px 0px 60px;
+    width: 34%;
+    height: 400px;
+    border-radius: 2rem 0 0 0;
+}
+.company-container-footer span{
+    font-weight: 300;
+}
+.company-container-footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.company-container-footer p{
+    font-size: small;
+    line-height: normal;
+}
+
+.All-Information-Container{
+    color: #ffffff;
+    font-size: small;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 3rem;
+    padding: 30px 0px 0px 60px;
+    width: 34%;
+    height: 400px;
+}
+.nav-link-footer > a{
+    line-height: 3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 0 .8rem;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-link-footer{
+    width: 100px;
+}
+
+.About-Container{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 30px 0px 0px 60px;
+    width: 34%;
+    height: 400px;
+    border-radius: 0 2rem 0 0;
+}
+
+/*----------- Main Footer Container Ends--------------*/
