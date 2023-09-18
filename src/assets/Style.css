@@ -490,3 +490,122 @@ header {
 }
 
 /*----------- Main Footer Container Ends--------------*/
+
+/*-------------- About Page CSS Starts----------------*/
+
+.About-Div-Cover{
+    height: 800px;
+    width: 100%;
+    background-image: url("Images/About-Cover.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: -120px;
+    border-radius: 0 0 2rem 2rem;
+}
+.AboutUs-header{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.Product-Square{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.Product-Square div div{
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+    margin-left: 60px;
+    border-radius: 2rem;
+    margin-bottom: 60px;
+}
+.Product-Square div:nth-child(even){
+    margin-top: 60px;
+}
+.ProSquare-Box-1{
+    background-image: url("Images/Behance.png");
+    background-size: 100% 100%;
+}
+.ProSquare-Box-2{
+    background-image: url("Images/Camera-Explore1.jpg");
+    background-size: 100% 100%;
+    background-color: rgba(233,231,230,255);
+}
+.ProSquare-Box-3{
+    background-image: url("Images/Explore-Charger.png");
+    background-size: 100% 100%;
+    background-color: rgba(233,231,230,255);
+}
+.ProSquare-Box-4{
+    background-image: url("Images/waterbottle.jpeg");
+    background-size: 100% 100%;
+}
+.ProSquare-Box-5{
+    background-image: url("Images/light.jpeg");
+    background-size: 100% 100%;
+}
+.ProSquare-Box-6{
+    background-image: url("Images/headphone.jpg");
+    background-size: 100% 100%;
+}
+.ProSquare-Box-7{
+    background-image: url("Images/Gear-Explore2.jpeg");
+    background-size: 100% 100%;
+}
+.ProSquare-Box-8{
+    background-image: url("Images/Headphone-Explore1.jpeg");
+    background-size: 100% 100%;
+    background-color: rgba(233,231,230,255);
+}
+.ProSquare-Box-9{
+    background-image: url("Images/hairdryer.jpeg");
+    background-size: 100% 100%;
+}
+.ProSquare-Box-10{
+    background-image: url("Images/AirBnBnow.png");
+    background-size: 100% 100%;
+}
+.Main-AboutUs-Desc-Container{
+    margin: 20px;
+    height: 950px;
+}
+.AboutUs-Desc-Container{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+.AboutUs-Desc-Container .Our-Mission{
+    background-image: url("Images/Mission.jpeg");
+    width: 90%;
+    height: 100%;
+    background-size: 35% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-color: rgba(212, 212, 212, 0.24);
+    background-position: center right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 250px 0px 0px 40px;
+}
+.AboutUs-Desc-Container .Our-Story{
+    background-image: url("Images/Mission.jpeg");
+    width: 90%;
+    height: 100%;
+    background-size: 35% 100%;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+    background-color: rgba(212, 212, 212, 0.24);
+    background-position: center right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 250px 0px 0px 40px;
+}
+
+
+/*-------------- About Page CSS Starts----------------*/
