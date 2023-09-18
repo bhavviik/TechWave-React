@@ -7,14 +7,13 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 function App() {
   return (
     <>
-      <BrowserRouter  basename="/TechWave-react">
+      <BrowserRouter >
         <Navbar />
         <Routes>
           <Route path="/Store" element={<Store />}>
           </Route>
-          <Route exact path="/TechWave-react" element={<HomePage />}></Route>
+          <Route exact path="/" element={<HomePage />}></Route>
         </Routes>
-        <HomePage />
         <Footer />
       </BrowserRouter>
     </>
