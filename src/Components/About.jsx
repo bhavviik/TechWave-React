@@ -38,23 +38,33 @@ export default function About() {
                     </div>
                 </div>
                 <div className="Main-AboutUs-Desc-Container">
-                    <div className="AboutUs-Desc-Container">
-                        <div className="Our-Mission">
-                            <h2>Our-Mission</h2>
-                            <p>Our mission is to provide the best in class tech products and accessories that are innovative, reliable, and user-friendly.<br />
-                                We want to make it easy for people to get the most out of their technology, and
-                                we believe that the best way to do that is <br />
-                                to offer products that are of the highest quality.
+                    <div className="Our-Mission">
+                        <div className="About-Text">
+                            <h1>Our-Mission</h1>
+                            <p>
+                                <strong>
+                                    Our mission is to provide the best in class tech products and accessories that are innovative, reliable, and user-friendly.
+                                    We want to make it easy for people to get the most out of their technology, and
+                                    we believe that the best way to do that is
+                                    to offer products that are of the highest quality.
+                                </strong>
                             </p>
                         </div>
+                        <div className="Our-Mission-Image">
+                        </div>
                     </div>
-                    <div className="AboutUs-Desc-Container">
-                        <div className="Our-Story">
-                            <h2>Our-Story</h2>
-                            <p>We started as a two-person team, crafting each item by hand. We were passionate about creating high-quality products,<br />
-                                and we were willing to put in the hard work to make it happen. Over time, our business grew, and we were able to hire more<br />
-                                people to help us. Today, we have a team of over 100 people, and we are still committed to creating the best possible products.
+                    <div className="Our-Story">
+                        <div className="About-Text-Story">
+                            <h1>Our-Story</h1>
+                            <p>
+                                <strong>
+                                    We started as a two-person team, crafting each item by hand. We were passionate about creating high-quality products,
+                                    and we were willing to put in the hard work to make it happen. Over time, our business grew, and we were able to hire more
+                                    people to help us. Today, we have a team of over 100 people, and we are still committed to creating the best possible products.
+                                </strong>
                             </p>
+                        </div>
+                        <div className="Our-Story-Image">
                         </div>
                     </div>
                 </div>

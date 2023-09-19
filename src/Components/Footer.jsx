@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
@@ -20,11 +21,18 @@ export default function Footer() {
                     <div className="All-Information-Container">
                         <h3>Informative Links</h3>
                         <ul>
-                            <li className="nav-link-footer"><a href="#">Home</a></li>
-                            <li className="nav-link-footer"><a href="store.html">Store</a></li>
-                            <li className="nav-link-footer"><a href="#">About</a></li>
-                            <li className="nav-link-footer"><a href="#">Support</a></li>
-                            <li className="nav-link-footer"><a href="#">Contact</a></li>
+                            <li className="nav-link-footer">
+                                <Link to="/">Home</Link>
+                            </li>
+                            <li className="nav-link-footer">
+                                <Link to="/Store">Store</Link>
+                            </li>
+                            <li className="nav-link-footer">
+                                <Link to="/About">About</Link>
+                            </li>
+                            <li className="nav-link-footer">
+                                <Link to="/Contact">Contact</Link>
+                            </li>
                         </ul>
                     </div>
                     <div className="About-Container">

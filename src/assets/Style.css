@@ -20,7 +20,7 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-    z-index: 1000;
+    z-index: 1;
     backdrop-filter: blur(10px);
 }
 
@@ -497,7 +497,7 @@ header {
 /*-------------- About Page CSS Starts----------------*/
 
 .About-Div-Cover{
-    height: 800px;
+    height: 985px;
     width: 100%;
     background-image: url("Images/About-Cover.jpeg");
     background-repeat: no-repeat;
@@ -571,44 +571,58 @@ header {
     background-size: 100% 100%;
 }
 .Main-AboutUs-Desc-Container{
-    margin: 20px;
-    height: 950px;
+    height: auto;
+    width: 90%;
+    margin: auto;
 }
-.AboutUs-Desc-Container{
+.Our-Mission{
+    height: 500px;
     width: 100%;
-    height: 50%;
     display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 20px;
+    flex-direction: row;
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 1.5rem;
+    background-color: #d4d4d487;
 }
-.AboutUs-Desc-Container .Our-Mission{
+.Our-Mission .About-Text{
+    width: 70%;
+    height: auto;
+    margin-top: 300px;
+    padding: 20px;
+}
+.Our-Mission .Our-Mission-Image{
+    width: 30%;
+    height: auto;
     background-image: url("Images/Mission.jpeg");
-    width: 90%;
-    height: 100%;
-    background-size: 35% 100%;
     background-repeat: no-repeat;
-    border-radius: 2rem;
-    background-color: rgba(212, 212, 212, 0.24);
-    background-position: center right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 250px 0px 0px 40px;
+    background-size: 100% 100%;
+    border-radius: 1.5rem;
 }
-.AboutUs-Desc-Container .Our-Story{
+.Our-Story{
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgb(172, 171, 171);
+    border-radius: 1.5rem;
+    background-color: #d4d4d487;
+}
+.Our-Story .About-Text-Story{
+    width: 70%;
+    height: auto;
+    margin-top: 300px;
+    padding: 20px;
+}
+.Our-Story .Our-Story-Image{
+    width: 30%;
+    height: auto;
     background-image: url("Images/Mission.jpeg");
-    width: 90%;
-    height: 100%;
-    background-size: 35% 100%;
     background-repeat: no-repeat;
-    border-radius: 2rem;
-    background-color: rgba(212, 212, 212, 0.24);
-    background-position: center right;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 250px 0px 0px 40px;
+    background-size: 100% 100%;
+    border-radius: 1.5rem;
 }
+
 
 
 /*-------------- About Page CSS Starts----------------*/
@@ -728,3 +742,186 @@ header {
 }
 
 /*-------------- Contact Page Css Ends  ----------------*/
+
+/*-------------- Media Queries ----------------------*/
+
+@media only screen and (min-device-width: 900px) and (max-device-width: 1600px){
+    
+    /*---------------Main Header-----------------------*/
+    .Main-Container{
+        height: 750px;
+        width: 100%;
+        background-size: 100% 930px;
+    }
+    .Main-Container-content{
+        height: 250px;
+        width: auto;
+        padding: 10px;
+    }
+    .Main-Container-content h2{
+        margin: 30px;
+        font-size: x-large;
+    }
+    .Main-Container-content p{
+        margin: 20px;
+    }
+    /*-----------------Main Header Ends----------------------*/
+    /*-----------------Explore Container Starts--------------*/
+    .Main-Explore-Container{
+        height: 790px;
+    }
+    .Explore-Container{
+        height: 750px;
+    }
+    .First-Explore-Container .Explore-Tech{
+        background-size: 47% 100%;
+        background-position: center left 450px;
+        padding: 200px 0px 0px 40px;
+    }
+    .First-Explore-Container .Explore-Gear{
+        background-size: 100% 110%;
+        background-position: center left 320px;
+        padding: 200px 0px 0px 40px;
+    }
+    .Second-Explore-Container .Explore-Gear2{
+        background-size: 100% 100%;
+        background-position: center left 250px;
+        padding: 200px 0px 0px 40px;
+    }
+    .Second-Explore-Container .Explore-Accessory{
+        background-size: 45% 90%;
+        background-position: center left 500px;
+        padding: 200px 0px 0px 40px;
+    }
+
+    /*-----------------Explore Container Starts--------------*/
+
+    /*----------------- Store Container-----------------------*/
+    .Store-Item{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        height: 1200px;
+    }
+    .Store-Item div{
+        height: 400px;
+        width: 340px;
+        margin: 0px 60px;
+        border-radius: 2rem;
+    }
+    .Store-Item-card-1,.Store-Item-card-2,
+    .Store-Item-card-3,.Store-Item-card-4,
+    .Store-Item-card-5,.Store-Item-card-6{
+        background-size: 350px 280px;
+        background-repeat: no-repeat;
+        background-color: rgb(255, 255, 255);
+    }
+    .Store-Item div .Item-Card-Desc{
+        width: 340px;
+        height: 150px;
+        text-align: center;
+        margin: 0;
+        backdrop-filter: blur(10px);
+        font-size: 15px;
+    }
+    .Store-Item-Categories input{
+        height: 30px;
+        width: auto;
+        padding: 2px 20px 15px 20px;
+    }
+    /*-------------Store Container Ends-----------------*/
+     /*-------------About Page Start-----------------*/
+    .About-Div-Cover{
+        height: 770px;
+    }
+    .AboutUs-header{
+        font-size: 15px;
+    }
+    .Product-Square div div{
+        height: 220px;
+        width: 220px;
+    }
+    .Our-Mission{
+        height: 400px;
+    }
+    .Our-Mission .About-Text{
+        margin-top: 230px;
+        padding: 20px;
+    }
+    .Our-Story{
+        height: 400px;
+    }
+    .Our-Story .About-Text-Story{
+        margin-top: 230px;
+    }
+    .Contact-Header{
+        margin-top: 40px;
+    }
+    .Contact-Header div{
+        font-size: 15px;
+    }
+    .Contact-Header .HearYou-Tag{
+        font-size: 40px;
+    }
+    .Company-Slogan-Tag{
+        margin-top: 5px;
+        font-size: 17px;
+    }
+    .Main-Contact-Div{
+        margin-top: 60px;
+    }
+    .Contact-Form-Div p:first-of-type{
+        font-weight: bold;
+        font-size: xx-large;
+        margin: 50px 0px 10px 70px;
+    }
+    .Contact-Form-Div p{
+        margin: 10px 0px 10px 70px;
+        font-size: large;
+    }
+    .Contact-Form-Div form{
+        margin: 10px 0px 10px 60px;
+        width: 600px;
+    }
+    .Image-Container{
+        width: 40%;
+        background-image: url("https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&h=800&q=80");
+        background-size: 100% 750px;
+        background-repeat: no-repeat;
+        background-position: right;
+        border-radius: 20px;
+    }
+      /*-------------About Page Ends-----------------*/
+
+ }
+
+ @media screen and (min-device-width: 500px) and (max-device-width:900px) {
+    
+    
+ }
+ @media screen and (min-device-width: 300px) and (max-device-width:500px) {
+    
+ }
+
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+
+ }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) { 
+
+ }
