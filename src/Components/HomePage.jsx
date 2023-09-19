@@ -1,7 +1,18 @@
 import React from "react";
 import * as Icon from "react-feather";
+import { Link } from "react-router-dom";
+import {Routes, Route, useNavigate} from 'react-router-dom';
+import Store from "./Store";
+import About from "./About";
 
 function HomePage() {
+    const navigate = useNavigate();
+    const browsOnClick = () => {
+            navigate("/Store")
+    }
+    const aboutOnClick = () => {
+        navigate("/About")
+}
     return (
         <>
             <div className="Main-Container">
@@ -11,10 +22,13 @@ function HomePage() {
                     <p><b>Find tech products that simplify your life, save<br /> your time, and make you more productive</b></p>
 
                     <div className="Content-Buttons">
-                        <button className="btn">Brows Products</button>
-                        <button className="btn">About Us</button>
+                        <button className="btn" onClick={browsOnClick}>Brows Products</button>
+                        <button className="btn" onClick={aboutOnClick}>About Us</button>
                     </div>
-
+                    <Routes>
+                        <Route path="/Store" element={<Store />}></Route>
+                        <Route path="/About" element={<About />}></Route>
+                    </Routes>
                 </div>
 
             </div>
@@ -25,13 +39,13 @@ function HomePage() {
                             <h2>Technology</h2>
                             <p>Tech products that designed and builds innovative <br />
                                 which are consistently rated above the competition.</p>
-                            <a href="/"><b>Explore Product</b><Icon.ArrowRight /></a>
+                            <Link to="/Store"><b>Explore Product</b><Icon.ArrowRight /></Link>
                         </div>
                         <div className="Explore-Gear">
                             <h2>Gear</h2>
                             <p>Tech products that designed and builds innovative <br />
                                 which are consistently rated above the competition.</p>
-                            <a href="/"><b>Explore Product</b><Icon.ArrowRight size={17} /></a>
+                            <Link to="/Store"><b>Explore Product</b><Icon.ArrowRight size={17} /></Link>
                         </div>
                     </div>
                     <div className="Second-Explore-Container">
@@ -39,13 +53,13 @@ function HomePage() {
                             <h2>Gear</h2>
                             <p>Tech products that designed and builds innovative <br />
                                 which are consistently rated above the competition.</p>
-                            <a href="/"><b>Explore Product</b><Icon.ArrowRight size={17} /></a>
+                            <Link to="/Store"><b>Explore Product</b><Icon.ArrowRight size={17} /></Link>
                         </div>
                         <div className="Explore-Accessory">
                             <h2>Accessory</h2>
                             <p>Tech products that designed and builds innovative <br />
                                 which are consistently rated above the competition.</p>
-                            <a href="/"><b>Explore Product</b><Icon.ArrowRight size={17} /></a>
+                            <Link to="/Store"><b>Explore Product</b><Icon.ArrowRight size={17} /></Link>
                         </div>
                     </div>
                 </div>
