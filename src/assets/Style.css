@@ -612,3 +612,119 @@ header {
 
 
 /*-------------- About Page CSS Starts----------------*/
+
+/*-------------- Contact Page Css Starts  ----------------*/
+
+.Contact-Header{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    align-items: center;
+}
+.Contact-Header div{
+    width: auto;
+    padding: 0px 7px 0px 7px;
+    border: 1px solid rgba(174, 167, 167, 0.782);
+    border-radius: 20px;
+    background-color: #d6cdcd2a;
+    margin-bottom: 0;
+    font-size: 17px;
+    font-weight: 500;
+}
+.Contact-Header div p {
+    margin-bottom: 0;
+}
+.Contact-Header .HearYou-Tag{
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+}
+.Company-Slogan-Tag{
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+}
+.Main-Contact-Div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.Form-Main-Container{
+    width: 80%;
+    height: 750px;
+    display: flex;
+    flex-direction: row;
+}
+.Form-Container{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    align-items: center;
+}
+.Contact-Form-Div p:first-of-type{
+    font-weight: bold;
+    font-size: xx-large;
+    margin: 100px 0px 10px 170px;
+}
+.Contact-Form-Div p{
+    font-weight: 300;
+    margin: 10px 0px 10px 170px;
+    font-size: x-large;
+}
+.Contact-Form-Div form{
+    margin: 10px 0px 10px 160px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+}
+.Contact-Form input{
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid rgba(174, 167, 167, 0.782);
+    width: 100%;
+    border-radius: 1.5rem;
+}
+.Contact-Form label{
+    font-weight: 500;
+    margin-left: 10px;
+}
+.Contact-Form input::placeholder{
+    padding-left: 10px;
+}
+.Contact-Form .First-Line{
+    display: flex;
+}
+.Contact-Form .First-Line div:first-of-type{
+    display: grid;
+    width: 50%;
+    margin-right: 15px;
+}
+.Contact-Form .First-Line div{
+    width: 50%;
+}
+.Contact-Form button{
+    margin-top: 20px;
+    border: 1px solid black;
+    height: 45px;
+    border-radius: 1.5rem;
+    background-color: #000000;
+    color: white;
+    text-transform: uppercase;
+}
+.Contact-Form button:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.Image-Container{
+    width: 40%;
+    background-image: url("https://images.unsplash.com/photo-1615840287214-7ff58936c4cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=687&h=800&q=80");
+    background-size: 100% 750px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 20px;
+}
+
+/*-------------- Contact Page Css Ends  ----------------*/
